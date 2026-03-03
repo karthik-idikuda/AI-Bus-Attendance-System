@@ -1,41 +1,114 @@
-# AI Smart Bus Attendance System
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=00e5ff&height=220&section=header&text=AI%20Bus%20Attendance%20System&fontSize=42&fontAlignY=35&desc=Machine%20Learning%20/%20AI&descAlignY=55&fontColor=ffffff" alt="Header"/>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Type-Machine%20Learning%20%2F%20AI-00e5ff?style=for-the-badge&logo=target&logoColor=black" alt="Type" />
+  <img src="https://img.shields.io/badge/Language-Python-00e5ff?style=for-the-badge&logo=code&logoColor=black" alt="Language" />
+  <img src="https://img.shields.io/badge/Files-34-161b22?style=for-the-badge&logo=files&logoColor=00e5ff" alt="Files" />
+  <img src="https://img.shields.io/badge/License-PROPRIETARY-ff0000?style=for-the-badge&logo=shield&logoColor=white" alt="License" />
+</p>
+
+  <img src="https://img.shields.io/badge/OpenCV-161b22?style=flat-square&logo=opencv&logoColor=00e5ff" alt="OpenCV" />
+  <img src="https://img.shields.io/badge/PyTorch-161b22?style=flat-square&logo=pytorch&logoColor=00e5ff" alt="PyTorch" />
+  <img src="https://img.shields.io/badge/TensorFlow-161b22?style=flat-square&logo=tensorflow&logoColor=00e5ff" alt="TensorFlow" />
+
+
+</div>
+
+---
 
 ## Overview
-An automated attendance management solution leveraging real-time facial recognition technology. This system streamlines the tracking of student flow on school buses, providing accurate, instantaneous logs and ensuring student safety through automated verification.
 
-## Features
--   **Real-time Recognition**: Instant student identification using FaceNet embeddings.
--   **Live Monitoring**: Interactive dashboard showing real-time camera feed and detection status.
--   **Automated Logging**: Timestamped attendance records generated automatically in CSV format.
--   **Registration Module**: easy-to-use interface for enrolling new students.
--   **Mask Detection**: Integrated safety checks for health compliance.
+> Facial recognition system for automated student attendance on buses.
 
-## Technology Stack
--   **Framework**: PyQt5 for the Graphical User Interface.
--   **Computer Vision**: OpenCV and MediaPipe for image processing.
--   **AI Models**: FaceNet for recognition, YOLOv5 for object detection.
--   **Database**: JSON and CSV for lightweight data persistence.
+**AI Bus Attendance System** is a proprietary machine learning / ai system engineered by **Karthik Idikuda**. It leverages OpenCV, PyTorch, TensorFlow for its core functionality.
+
+<br/>
 
 ## System Architecture
-1.  **Capture**: Video feed input from bus cameras.
-2.  **Process**: Frame analysis for face detection and alignment.
-3.  **Identify**: Feature extraction and matching against the student database.
-4.  **Log**: Attendance record creation and storage.
 
-## Quick Start
-```bash
-# Clone the repository
-git clone https://github.com/Nytrynox/AI-based-Attendance-Management-System.git
+```mermaid
+graph TD;
+    A["Data Acquisition Layer"] -->|Raw Input| B["Preprocessing Engine"];
+    B -->|Frames/Images| C["Computer Vision Module<br/>OpenCV / YOLO"];
+    C -->|Features| D{"Neural Network Core"};
+    D -->|TensorFlow + PyTorch| E["Model Training & Evaluation"];
+    E -->|Predictions| F["Output / Results"];
 
-# Install dependencies
-pip install -r requirements.txt
-
-# Launch the dashboard
-python main.py
+    classDef ml fill:#0d1117,stroke:#ff6e96,stroke-width:2px,color:#fff;
+    classDef cv fill:#161b22,stroke:#79c0ff,stroke-width:2px,color:#fff;
+    classDef web fill:#21262d,stroke:#56d364,stroke-width:2px,color:#fff;
+    class A,B ml;
+    class C cv;
+    class D,E ml;
+    class F,G web;
 ```
 
-## License
-MIT License
+<br/>
 
-## Author
-**Karthik Idikuda**
+## Project Structure
+
+```
+AI-Bus-Attendance-System/
+  .gitattributes
+  .gitignore
+  LICENSE
+  README.md
+  README_UPDATED.md
+  RECOGNITION_FIX_COMPLETE.md
+  REGISTRATION_FIX_SUMMARY.md
+  fix_dependencies.py
+  launch_attendance_system.py
+  main.py
+  data/
+  gui/
+    __init__.py
+    main_gui.py
+    register_gui.py
+    utils.py
+  models/
+    facenet_keras.h5
+    mask_detection_yolov5s.pt
+  src/
+    attendance.py
+    face_detection.py
+    face_recognition.py
+    face_recognition_backup.py
+    face_recognition_fixed.py
+```
+
+<br/>
+
+## Technical Specifications
+
+| Attribute | Detail |
+|:---|:---|
+| **Primary Language** | `Python` |
+| **Project Category** | `Machine Learning / AI` |
+| **Total Source Files** | `34` |
+| **Frameworks** | `OpenCV`, `PyTorch`, `TensorFlow` |
+| **Key Dependencies** | `torch` | `numpy` | `tensorflow` | `PyQt5` | `opencv-python` | `mediapipe` |
+| **Intellectual Property** | `Strictly Proprietary` |
+
+<br/>
+
+## STRICT LEGAL WARNING & LICENSE
+
+> **PROPRIETARY AND CONFIDENTIAL**
+
+This software and all associated documentation are the **exclusive property of Karthik Idikuda**.
+
+- **NO PERMISSION IS GRANTED** to use, copy, modify, merge, publish, distribute, sublicense, or sell copies of this software without explicit, written consent from the author.
+- **UNAUTHORIZED USE WILL RESULT IN SEVERE LEGAL ACTION.** Any individual or organization found using, referencing, or deploying this code without paying the required licensing fees will face immediate litigation, financial penalties, and potentially criminal prosecution where applicable by law.
+- **TO OBTAIN A LEGAL LICENSE**, you must directly contact Karthik Idikuda to negotiate payment terms.
+
+*By accessing this repository, you acknowledge and accept these strict proprietary terms.*
+
+---
+
+<div align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=600&size=18&pause=1000&color=00E5FF&center=true&vCenter=true&width=535&lines=Engineered+by+Karthik+Idikuda;Machine+Learning+%2F+AI+Architecture;Strict+Proprietary+License" alt="Typing SVG" />
+</div>
+
+<!-- TRACKING: S0ktQUktQnVzLUF0dGVuZGFuY2UtU3lzdGVtLVRSQUNL -->
